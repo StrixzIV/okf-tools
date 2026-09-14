@@ -1,0 +1,10 @@
+# Root binary
+/okf
+/okf.exe
+*.test
+
+# OS files
+.DS_Store
+
+# Go build cache / test artifacts
+*.out
