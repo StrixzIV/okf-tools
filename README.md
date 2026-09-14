@@ -264,6 +264,27 @@ Content with Obsidian [[Wikilinks]] or [Markdown Links](other.md).
 
 ---
 
+## 🤖 Agent Skills & Harness Integration
+
+This repository includes the official **Google OKF Agent Skill** under [`skills/`](skills/), packaging prompt guidelines, templates, references, and CLI hooks for autonomous agents:
+
+- **Packaged Bundle:** [`skills/google-okf.skill`](skills/google-okf.skill)
+- **Extracted Skill:** [`skills/google-okf/`](skills/google-okf/)
+- **Comprehensive Setup Guide:** [`skills/README.md`](skills/README.md)
+
+### Quick Setup by Harness
+
+- **Hermes Agent:** `hermes skill install skills/google-okf.skill`
+- **OpenClaw:** `openclaw skill install skills/google-okf.skill`
+- **Claude Code:** Add instructions pointing to `skills/google-okf/SKILL.md` in your project `CLAUDE.md`.
+- **OpenAI Codex / Agents SDK:** Use `skills/google-okf/SKILL.md` in agent instructions and bind `okf` CLI.
+- **Antigravity / Gemini CLI:** Automatically discovered at `skills/google-okf/SKILL.md`.
+- **Cursor / Windsurf:** Add project rule pointing to `skills/google-okf/SKILL.md` in `.cursorrules`.
+
+For full step-by-step setup guides, see [**`skills/README.md`**](skills/README.md).
+
+---
+
 ## Benchmarks
 
 Tested on Apple M1 (8 cores) across a synthetic vault of 1,000 Markdown documents:
